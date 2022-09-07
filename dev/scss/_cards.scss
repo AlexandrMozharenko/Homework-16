@@ -1,0 +1,144 @@
+.publications {
+    background: $bgslide;
+}
+
+.publ-cont {
+    padding-top: 30px;
+    border-bottom: 3px solid $fcont;
+
+    &__publ-link {
+        display: block;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(17/14);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $links;
+        padding-bottom: 15px;
+    }
+
+    &__publ-link:hover {
+        text-decoration: underline;
+        transition: $hsp;
+    }
+
+    &__pbl-ph {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $phrases;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        padding-bottom: 15px;
+
+        @media (min-width: 768px) {
+            font-size: 38px;
+            line-height: 47px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column; 
+        padding-bottom: 30px;
+
+        @media (min-width: 768px) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: -15px;
+            flex-direction: row;
+            align-items: stretch;
+        }
+        
+        li {
+            margin: 15px 0;
+            list-style: none;
+            padding: 0 15px;
+            width: 100%;
+
+            @media (min-width: 768px) {
+                width: calc(100%/2);
+            }
+
+            @media (min-width: 1024px) {
+                width: calc(100%/3);
+            }
+        }
+
+        li:last-child {
+            @media (min-width: 768px) {
+                width: 100%;
+            }
+
+            @media (min-width: 1024px) {
+                width: calc(100%/3);
+            }
+        }
+    }
+    
+    &__card-cont {
+        height: 100%;
+        background: $stnd;
+        border-radius: 8px;
+    }
+    
+    &__card-img {
+        width: 100%;  
+
+        @media (min-width: 768px) {
+            
+        }
+    }
+
+    &__card-img img {
+        width: 100%;
+    }
+
+    &__card-txt {
+        padding: 0 30px;
+    }
+
+    &__crd-dscr {
+        display: block;
+        padding-top: 30px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(20/16);
+        color: $links;
+        transition: $lhsp;
+    }
+
+    &__crd-dscr:hover {
+        color: $basecolor;
+        transition: $lhsp;
+    }
+
+    &__date {
+        border: 0;
+        padding: 15px 0;
+        
+        &::placeholder {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $items;
+        }
+    }
+
+    &__crd-txt-below {   
+        padding-bottom: 30px; 
+        border-top: 4px solid $fcont; 
+        padding: 15px;     
+       
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}

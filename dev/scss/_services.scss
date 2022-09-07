@@ -1,0 +1,113 @@
+.serv-main {
+    padding-top: 176px;
+}
+
+.services {
+    padding-top: 120px;
+
+    @media (min-width: 768px) {
+        padding-top: 60px;
+    }
+
+    &__link-serv {       
+        display: block;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $links;
+        padding-bottom: 10px;   
+        transition: $hsp;     
+    }
+    
+    &__link-serv:hover {
+        text-decoration: underline;
+        transition: $hsp;
+    }
+    
+    &__serv-ph {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        background: $phrases;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    
+    &__cards {
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+
+        @media (min-width: 768px) {
+            flex-wrap: wrap;   
+            flex-direction: row;
+        }
+        
+        li {
+            list-style: none;
+            width: 100%;
+            padding: 30px 20px;
+            transition: $lhsp;
+
+            @media (min-width: 768px) {
+                width: calc(100%/2);
+                padding: 30px 20px; 
+                }
+
+            @media (min-width: 1024px) {
+                width: calc(100%/3);
+                padding: 30px 20px; 
+                }
+        }
+    
+        >li:hover {
+            box-shadow: 0 6px 10px $txtshadow;
+            border-radius: 20px;
+            scale: 101%;
+            transition: .8s;
+        }
+    
+        .card-img {
+            width: 92px;
+            height: 92px;
+            background: $stnd;
+            border-radius: 24px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .card-text {
+            padding-top: 30px;
+        }
+    
+        .card-serv-off {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            color: $links;
+            transition: $lhsp;
+        }
+    
+        .card-serv-off:hover {
+            color: rgba($basecolor, .8);
+            transition: $lhsp;
+        }
+    
+        .card-serv-descr {
+            padding-top: 15px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $stnd;
+            padding: 60px 0;
+        }
+    }
+}

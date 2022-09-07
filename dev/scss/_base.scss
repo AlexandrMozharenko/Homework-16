@@ -1,0 +1,25 @@
+body {
+    font-family: 'Montserrat' Arial, Helvetica, sans-serif;
+    color: $black;
+}
+
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1350px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}

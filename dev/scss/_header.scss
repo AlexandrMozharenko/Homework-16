@@ -49,13 +49,17 @@
     &__logo {
         display: block;
         grid-column: 1;
-        width: 130px; 
+        max-width: 130px; 
         grid-row: 2;
         align-self: center;
 
         @media (min-width: 1024px) {
             grid-row: 1/2;
         }
+    }
+
+    &__logo-serv {
+        max-width: 302px;
     }
     
     &__above {

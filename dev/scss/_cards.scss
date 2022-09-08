@@ -117,17 +117,16 @@
     }
 
     &__date {
+        display: block;
         border: 0;
         padding: 15px 0;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $items;
         
-        &::placeholder {
-            font-weight: 700;
-            font-size: 12px;
-            line-height: 15px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: $items;
-        }
     }
 
     &__crd-txt-below {   

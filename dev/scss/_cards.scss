@@ -16,10 +16,11 @@
         text-transform: uppercase;
         color: $links;
         padding-bottom: 15px;
+        transition: $hsp;
     }
 
     &__publ-link:hover {
-        text-decoration: underline;
+        color: $basecolor;
         transition: $hsp;
     }
 
@@ -87,10 +88,6 @@
     
     &__card-img {
         width: 100%;  
-
-        @media (min-width: 768px) {
-            
-        }
     }
 
     &__card-img img {
@@ -132,12 +129,12 @@
     &__crd-txt-below {   
         padding-bottom: 30px; 
         border-top: 4px solid $fcont; 
-        padding: 15px;     
-       
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        
         p {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 22px;
+            padding: 15px;     
         }
     }
 }

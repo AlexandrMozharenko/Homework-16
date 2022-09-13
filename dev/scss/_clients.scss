@@ -1,6 +1,11 @@
 
 .clients {
     padding-top: 50px;
+
+    @media (min-width: 1440px) {
+        margin: 0 100px;
+        padding-bottom: 60px;
+    }
 }
 
 .clients-serv {

@@ -22,7 +22,7 @@
     }
     
     &__link-serv:hover {
-        text-decoration: underline;
+        color: $basecolor;
         transition: $hsp;
     }
     
@@ -85,6 +85,10 @@
     
         .card-text {
             padding-top: 30px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $stnd;
         }
     
         .card-serv-off {
@@ -103,11 +107,6 @@
     
         .card-serv-descr {
             padding-top: 15px;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;
-            color: $stnd;
-            padding: 60px 0;
         }
     }
 }
